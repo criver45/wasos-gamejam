@@ -77,12 +77,14 @@ public class OrcShamanlv2 : MonoBehaviour
     {
         anim.SetBool("life", true);
         yield return new WaitForSeconds(3f);
-        //SceneManager.LoadScene("Gamelv1");
+        SceneManager.LoadScene("MainPrincipal");
     }
 
     public IEnumerator FinalLv()
     {
         yield return new WaitForSeconds(4f);
-        //SceneManager.LoadScene("Gamelv3");
+        SceneManager.LoadScene("SampleScene");
     }
+
+
 }

@@ -843,7 +843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 858f148628fd6674f95333c1184404ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: 0
+  item: 3
 --- !u!58 &584524979
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3387,11 +3387,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Orc_Shaman
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7628686607738171546, guid: 6e453382e0c02054c904879b776f2a33, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1894210206566548862, guid: 6e453382e0c02054c904879b776f2a33, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1299034774023895495}
   m_SourcePrefab: {fileID: 100100000, guid: 6e453382e0c02054c904879b776f2a33, type: 3}
+--- !u!95 &1299034774023895493 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3588115432025191696, guid: 6e453382e0c02054c904879b776f2a33, type: 3}
+  m_PrefabInstance: {fileID: 1299034774023895492}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1299034774023895494 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 4816352197063676926, guid: 6e453382e0c02054c904879b776f2a33, type: 3}
+  m_PrefabInstance: {fileID: 1299034774023895492}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1299034774023895495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236790712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 676ddbcdb75d3944e911f66a9a84cbeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  rb: {fileID: 1299034774023895494}
+  anim: {fileID: 1299034774023895493}
+  isEnableItem: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

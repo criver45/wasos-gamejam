@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1621452262630990953}
   - component: {fileID: 4816352197063676926}
   - component: {fileID: 2509633496546390457}
-  - component: {fileID: 2846898453495708715}
   - component: {fileID: 3588115432025191696}
+  - component: {fileID: -7628686607738171546}
   m_Layer: 0
   m_Name: Orc_Shaman
   m_TagString: Player
@@ -160,22 +160,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.15625, y: 1.541585}
   m_EdgeRadius: 0
---- !u!114 &2846898453495708715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1894210206566548862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 676ddbcdb75d3944e911f66a9a84cbeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  rb: {fileID: 4816352197063676926}
-  anim: {fileID: 3588115432025191696}
-  isEnableItem: 0
 --- !u!95 &3588115432025191696
 Animator:
   serializedVersion: 5
@@ -197,3 +181,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-7628686607738171546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894210206566548862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d510bdde9bd8b047bca8e9f18f9746d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  jumpForce: 12
+  canJump: 1
+  rb: {fileID: 0}
+  animBody: {fileID: 0}
